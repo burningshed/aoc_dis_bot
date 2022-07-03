@@ -1,0 +1,1 @@
+discord_api_key = input("Enter the discord api key:")
