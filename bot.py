@@ -26,7 +26,7 @@ async def list_themes(ctx):
     {hbreak}
     """
     for theme in theme_list:
-        response += f"{theme['id']} | {theme['name']: ^16} | {theme.get_votes()}\n\t"
+        response += f"{theme.id} | {theme.name : ^16} | {theme.get_votes()}\n\t"
     response += """
     ```"""
     await ctx.send(response)
